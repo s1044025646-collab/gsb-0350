@@ -1,0 +1,23 @@
+{
+  "name": "involute-gear-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "直齿轮单齿双侧渐开线采样与节圆齿厚核验后端（仅 API 与 CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx src/cli.ts demo"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0"
+  }
+}
